@@ -18,12 +18,7 @@ var commentRoutes = require("./routes/comments"),
 
 mongoose.connect(process.env.DATABASEURL);
 // mongoose.connect("mongodb://localhost/yelp_camp_v1", {useNewUrlParser: true, useUnifiedTopology: true});
-// mongoose.connect("mongodb+srv://varvaralipunova:varenik16@cluster0.hgigg.mongodb.net/<dbname>?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true 
-// }).then(() => {
-// 	console.log('Connected to DB!');
-// }).catch(err => {
-// 	console.log('Error: ', err.message);
-// });
+// mongoose.connect("mongodb+srv://varvaralipunova:varenik16@cluster0.hgigg.mongodb.net/<dbname>?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
